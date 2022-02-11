@@ -1,42 +1,100 @@
-/*Возьми свою первую выполненную домашку и стилизуй её. Требования:
-
-!!Контент занимает 70% ширины страницы.
-!!Контент выровнен по середине.
-!!Заголовки всех уровней выполнены шрифтом без засечек.
-!!Верхний отступ заголовков установлен больше нижнего (например, 1.5em), чтобы соблюсти правило внутреннего и внешнего.
-!!Заголовки первого уровня имеют размер 32px.
-!!Таблицы имеют непрерывные границы чёрного цвета толщиной 1px.
-!!Подписи под картинками выполены курсивом.
-!!Картинки обтекаются текстом. Картинки справа, текст слева.
-*/
-
-body {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h1 {
-    font-size: 32px;
-}
-
-h1,
-h2,
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 1.5em;
-}
-
-table,
-th,
-td {
-    border: 1px solid black;
-}
-
-figcaption {
-    font-style: italic;
-}
-
-figure {
-    float: right;
-}
+                    body {
+                        width: 70%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background: #fbeec1;
+                        background: linear-gradient(115deg, #fbeec1 0%, #DaaD86 55%, #DC986A 100%);
+                        /* on-off animaniton*/
+                        animation: gradient 15s infinite linear;
+                        background-size: 450%;
+                    }
+                    
+                    @keyframes gradient {
+                        0% {
+                            background-position: 80% 0%;
+                        }
+                        50% {
+                            background-position: 20% 100%;
+                        }
+                        100% {
+                            background-position: 80% 0%;
+                        }
+                    }
+                    
+                    h1 {
+                        font-size: 32px;
+                    }
+                    
+                    h1,
+                    h2,
+                    h3 {
+                        font-family: Arial, Helvetica, sans-serif;
+                        margin-top: 1.5em;
+                        color: #112D32;
+                    }
+                    
+                    a {
+                        font-size: 20px;
+                        color: #254e58;
+                    }
+                    
+                    p {
+                        font-size: 18px;
+                        color: #112D32;
+                    }
+                    
+                    figcaption {
+                        font-style: italic;
+                        text-align: center;
+                        color: #112D32;
+                    }
+                    
+                    figure {
+                        float: right;
+                    }
+                    
+                    th {
+                        font-size: 16px;
+                        font-weight: 600;
+                        background: #DC986A;
+                        border-top: 4px solid #DC986A;
+                        border-bottom: 1px solid #DC986A;
+                        color: #112D32;
+                        padding: 7px;
+                        text-align: center;
+                    }
+                    
+                    td {
+                        background: #DaaD86;
+                        border-bottom: 1px solid #DC986A;
+                        color: #112D32;
+                        border-top: 1px solid transparent;
+                        padding: 10px;
+                        text-align: center;
+                    }
+                    
+                    caption {
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #112D32;
+                        padding: 10px;
+                    }
+                    
+                    blockquote {
+                        display: flow-root;
+                        color: #112D32;
+                        background: #DC986A;
+                        margin: auto;
+                        padding: 25px;
+                        text-align: left;
+                    }
+                    
+                    .sistercity {
+                        -webkit-column-count: 3;
+                        -moz-column-count: 3;
+                        column-count: 3;
+                        background: #DaaD86;
+                        text-align: left;
+                        color: #112D32;
+                    }
