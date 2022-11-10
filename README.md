@@ -11,7 +11,7 @@
 
 ## Info
 
-![Gifweb](readme/gifweb.webp)
+![Gifweb](readme/gifweb.gif)
 
 Создано на основе задания с курса с сайта [Stepik](https://welcome.stepik.org/ru)
 
